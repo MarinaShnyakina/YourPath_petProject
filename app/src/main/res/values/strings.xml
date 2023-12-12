@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">YourPath_petProject</string>
+    <string name="title_courses">Курсы</string>
+    <string name="cart">Корзина</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="books">Книги</string>
+    <string name="special">Специалисты</string>
+    <string name="courses">Курсы</string>
+    <string name="articles">Статьи</string>
+    <string name="glider">Планер</string>
+    <string name="settings">Настройки</string>
 </resources>

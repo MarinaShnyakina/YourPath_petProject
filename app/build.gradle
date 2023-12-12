@@ -30,6 +30,16 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    buildFeatures{
+        dataBinding true
+        viewBinding true
+    }
+}
+
+ext {
+    navigation_fragment = '2.7.5'
+    livedata_viewmodel = '2.6.2'
 }
 
 dependencies {
@@ -38,6 +48,15 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.10.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    // Navigation
+    implementation "androidx.navigation:navigation-fragment-ktx:navigation_fragment"
+    implementation "androidx.navigation:navigation-ui:navigation_fragment"
+
+    //Live Data and View Model
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:livedata_viewmodel"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:livedata_viewmodel"
+
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
