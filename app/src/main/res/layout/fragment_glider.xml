@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/back">
+
+    <ImageView
+        android:id="@+id/image_task"
+        android:layout_width="@dimen/menu_image_size"
+        android:layout_height="@dimen/menu_image_size"
+        android:layout_margin="@dimen/layout_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tasks" />
+
+    <TextView
+        android:id="@+id/text_title_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_margin"
+        android:text="@string/tasks"
+        android:textColor="@color/title_text_color"
+        android:textSize="@dimen/title_text_size"
+        app:layout_constraintStart_toEndOf="@+id/image_task"
+        app:layout_constraintTop_toTopOf="@+id/image_task"/>
+
+    <TextView
+        android:id="@+id/text_desc_task"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:text="text Task"
+        android:textColor="@color/title_text_color"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_task"
+        app:layout_constraintStart_toStartOf="@+id/text_title_task"
+        app:layout_constraintTop_toBottomOf="@+id/text_title_task" />
+
+    <ImageView
+        android:id="@+id/image_alarm"
+        android:layout_width="@dimen/menu_image_size"
+        android:layout_height="@dimen/menu_image_size"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/alarm"
+        app:layout_constraintStart_toStartOf="@id/image_task"
+        app:layout_constraintTop_toBottomOf="@+id/image_task" />
+
+    <TextView
+        android:id="@+id/text_title_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alarm"
+        android:textColor="@color/title_text_color"
+        android:textSize="@dimen/title_text_size"
+        app:layout_constraintStart_toStartOf="@+id/text_title_task"
+        app:layout_constraintTop_toTopOf="@id/image_alarm"/>
+
+    <TextView
+        android:id="@+id/text_desc_alarm"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:text="text Alarm"
+        android:textColor="@color/title_text_color"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_alarm"
+        app:layout_constraintStart_toStartOf="@+id/text_title_alarm"
+        app:layout_constraintTop_toBottomOf="@+id/text_title_alarm" />
+
+    <ImageView
+        android:id="@+id/image_beliefs"
+        android:layout_width="@dimen/menu_image_size"
+        android:layout_height="@dimen/menu_image_size"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/beliefs"
+        app:layout_constraintStart_toStartOf="@id/image_alarm"
+        app:layout_constraintTop_toBottomOf="@+id/image_alarm" />
+
+    <TextView
+        android:id="@+id/text_title_beliefs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/beliefs"
+        android:textColor="@color/title_text_color"
+        android:textSize="@dimen/title_text_size"
+        app:layout_constraintStart_toStartOf="@+id/text_title_task"
+        app:layout_constraintTop_toTopOf="@id/image_beliefs"/>
+
+    <TextView
+        android:id="@+id/text_desc_beliefs"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:text="text Beliefs"
+        android:textColor="@color/title_text_color"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_beliefs"
+        app:layout_constraintStart_toStartOf="@+id/text_title_beliefs"
+        app:layout_constraintTop_toBottomOf="@+id/text_title_beliefs" />
+
+    <ImageView
+        android:id="@+id/image_monitoring"
+        android:layout_width="@dimen/menu_image_size"
+        android:layout_height="@dimen/menu_image_size"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/monitoring"
+        app:layout_constraintStart_toStartOf="@id/image_beliefs"
+        app:layout_constraintTop_toBottomOf="@+id/image_beliefs" />
+
+    <TextView
+        android:id="@+id/text_title_monitoring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/monitoring"
+        android:textColor="@color/title_text_color"
+        android:textSize="@dimen/title_text_size"
+        app:layout_constraintStart_toStartOf="@+id/text_title_task"
+        app:layout_constraintTop_toTopOf="@id/image_monitoring"/>
+
+    <TextView
+        android:id="@+id/text_desc_monitoring"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:text="text Monitoring"
+        android:textColor="@color/title_text_color"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_monitoring"
+        app:layout_constraintStart_toStartOf="@+id/text_title_monitoring"
+        app:layout_constraintTop_toBottomOf="@+id/text_title_monitoring" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

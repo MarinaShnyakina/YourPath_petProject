@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/back"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.MenuFragment">
 
@@ -21,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="@string/books"
-        android:textColor="@color/violet"
+        android:textColor="@color/title_text_color"
         android:textSize="@dimen/menu_title_text_size"
         app:layout_constraintEnd_toEndOf="@+id/image_books"
         app:layout_constraintStart_toStartOf="@id/image_books"
@@ -31,10 +32,10 @@
         android:id="@+id/image_special"
         android:layout_width="@dimen/menu_image_size"
         android:layout_height="@dimen/menu_image_size"
+        android:layout_marginEnd="30dp"
         android:src="@drawable/special"
-        app:layout_constraintStart_toEndOf="@id/image_books"
-        app:layout_constraintTop_toTopOf="@id/image_books"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/image_books" />
 
     <TextView
         android:id="@+id/special_title_menu"
@@ -42,41 +43,20 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="@string/special"
-        android:textColor="@color/violet"
+        android:textColor="@color/title_text_color"
         android:textSize="@dimen/menu_title_text_size"
         app:layout_constraintEnd_toEndOf="@+id/image_special"
         app:layout_constraintStart_toStartOf="@id/image_special"
         app:layout_constraintTop_toBottomOf="@id/image_special" />
 
     <ImageView
-        android:id="@+id/image_courses"
+        android:id="@+id/image_articles"
         android:layout_width="@dimen/menu_image_size"
         android:layout_height="@dimen/menu_image_size"
         android:layout_marginTop="80dp"
-        android:src="@drawable/courses"
-        app:layout_constraintStart_toStartOf="@id/image_books"
-        app:layout_constraintTop_toBottomOf="@id/image_books" />
-
-    <TextView
-        android:id="@+id/courses_title_menu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="@string/courses"
-        android:textColor="@color/violet"
-        android:textSize="@dimen/menu_title_text_size"
-        app:layout_constraintEnd_toEndOf="@+id/image_courses"
-        app:layout_constraintStart_toStartOf="@id/image_courses"
-        app:layout_constraintTop_toBottomOf="@id/image_courses" />
-
-    <ImageView
-        android:id="@+id/image_acticles"
-        android:layout_width="@dimen/menu_image_size"
-        android:layout_height="@dimen/menu_image_size"
         android:src="@drawable/articles"
-        app:layout_constraintStart_toEndOf="@id/image_courses"
-        app:layout_constraintTop_toTopOf="@id/image_courses"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/image_books"
+        app:layout_constraintTop_toBottomOf="@id/image_books" />
 
     <TextView
         android:id="@+id/articles_title_menu"
@@ -84,11 +64,31 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="@string/articles"
-        android:textColor="@color/violet"
+        android:textColor="@color/title_text_color"
         android:textSize="@dimen/menu_title_text_size"
-        app:layout_constraintEnd_toEndOf="@+id/image_acticles"
-        app:layout_constraintStart_toStartOf="@id/image_acticles"
-        app:layout_constraintTop_toBottomOf="@id/image_acticles" />
+        app:layout_constraintEnd_toEndOf="@+id/image_articles"
+        app:layout_constraintStart_toStartOf="@id/image_articles"
+        app:layout_constraintTop_toBottomOf="@id/image_articles" />
+
+    <ImageView
+        android:id="@+id/image_courses"
+        android:layout_width="@dimen/menu_image_size"
+        android:layout_height="@dimen/menu_image_size"
+        android:src="@drawable/courses"
+        app:layout_constraintTop_toTopOf="@id/image_articles"
+        app:layout_constraintEnd_toEndOf="@id/image_special" />
+
+    <TextView
+        android:id="@+id/courses_title_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/courses"
+        android:textColor="@color/title_text_color"
+        android:textSize="@dimen/menu_title_text_size"
+        app:layout_constraintEnd_toEndOf="@+id/image_courses"
+        app:layout_constraintStart_toStartOf="@id/image_courses"
+        app:layout_constraintTop_toBottomOf="@id/image_courses" />
 
     <ImageView
         android:id="@+id/image_glider"
@@ -96,8 +96,8 @@
         android:layout_height="@dimen/menu_image_size"
         android:layout_marginTop="80dp"
         android:src="@drawable/glider"
-        app:layout_constraintStart_toStartOf="@id/image_courses"
-        app:layout_constraintTop_toBottomOf="@id/image_courses" />
+        app:layout_constraintStart_toStartOf="@+id/image_articles"
+        app:layout_constraintTop_toBottomOf="@+id/image_articles" />
 
     <TextView
         android:id="@+id/glider_title_menu"
@@ -105,7 +105,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="@string/glider"
-        android:textColor="@color/violet"
+        android:textColor="@color/title_text_color"
         android:textSize="@dimen/menu_title_text_size"
         app:layout_constraintEnd_toEndOf="@+id/image_glider"
         app:layout_constraintStart_toStartOf="@id/image_glider"
@@ -116,9 +116,8 @@
         android:layout_width="@dimen/menu_image_size"
         android:layout_height="@dimen/menu_image_size"
         android:src="@drawable/settings"
-        app:layout_constraintStart_toEndOf="@id/image_glider"
-        app:layout_constraintTop_toTopOf="@id/image_glider"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/image_courses"
+        app:layout_constraintTop_toTopOf="@+id/image_glider" />
 
     <TextView
         android:id="@+id/settings_title_menu"
@@ -126,7 +125,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="@string/settings"
-        android:textColor="@color/violet"
+        android:textColor="@color/title_text_color"
         android:textSize="@dimen/menu_title_text_size"
         app:layout_constraintEnd_toEndOf="@+id/image_settings"
         app:layout_constraintStart_toStartOf="@id/image_settings"

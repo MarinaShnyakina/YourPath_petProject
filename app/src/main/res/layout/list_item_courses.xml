@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/course_item"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="15dp"
+    app:contentPaddingBottom="10dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image_item_courses"
+        android:layout_width="@dimen/course_image_size"
+        android:layout_height="@dimen/course_image_size"
+        app:srcCompat="@drawable/course_goal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/course_title_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/goal"
+        android:textColor="@color/black"
+        android:textSize="@dimen/title_text_size"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/image_item_courses"
+        app:layout_constraintTop_toBottomOf="@id/image_item_courses"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date"
+        android:textColor="@color/black"
+        android:textSize="@dimen/menu_title_text_size"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/course_title_item"
+        app:layout_constraintTop_toBottomOf="@id/course_title_item"/>
+
+    <TextView
+        android:id="@+id/course_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="course Start Data"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@id/course_title_item"
+        app:layout_constraintTop_toBottomOf="@id/course_title_item"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/format"
+        android:textColor="@color/black"
+        android:textSize="@dimen/menu_title_text_size"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/course_title_item"
+        app:layout_constraintTop_toBottomOf="@id/course_title_item"/>
+
+    <TextView
+        android:id="@+id/courseFormat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="course Format"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@id/course_title_item"
+        app:layout_constraintTop_toBottomOf="@id/course_title_item"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/price"
+        android:textColor="@color/black"
+        android:textSize="@dimen/menu_title_text_size"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/course_title_item"
+        app:layout_constraintTop_toBottomOf="@id/course_title_item"/>
+
+    <TextView
+        android:id="@+id/coursePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="course Price"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@id/course_title_item"
+        app:layout_constraintTop_toBottomOf="@id/course_title_item"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
